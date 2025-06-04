@@ -166,8 +166,7 @@ int main() {
 
         if (pilihan == 1) {
             char temp[100];
-            cout << "Data sebelum diurutkan: ";
-            tampilkanChar(namaBersih, panjangNama);
+            cout << "Data sebelum diurutkan: " << nama << endl;
             for (int i = 0; i < panjangNama; i++) temp[i] = namaBersih[i];
             insertionSort(temp, panjangNama);
             cout << "Hasil insertion sort: ";
@@ -175,8 +174,7 @@ int main() {
         }
         else if (pilihan == 2) {
             char temp[100];
-            cout << "Data sebelum diurutkan: ";
-            tampilkanChar(namaBersih, panjangNama);
+            cout << "Data sebelum diurutkan: " << nama << endl;
             for (int i = 0; i < panjangNama; i++) temp[i] = namaBersih[i];
             mergeSort(temp, 0, panjangNama - 1);
             cout << "Hasil merge sort: ";
@@ -184,9 +182,8 @@ int main() {
         }
         else if (pilihan == 3) {
             char temp[100];
-            cout << "Data sebelum diurutkan: ";
-            tampilkanChar(namaBersih, panjangNama);
-            for (int i = 0; i < panjangNama; i++) temp[i] = namaBersih[i];
+            cout << "Data sebelum diurutkan: " << nama << endl;
+            for (int  = 0; i < panjangNama; i++) temp[i] = namaBersih[i];
             shellSort(temp, panjangNama);
             cout << "Hasil shell sort: ";
             tampilkanChar(temp, panjangNama);
